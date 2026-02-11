@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SelfCorrect</string>
+    <string-array name="categories">
+        <item>Study</item>
+        <item>Work</item>
+        <item>Health</item>
+        <item>Money</item>
+        <item>Behaviour</item>
+    </string-array>
+</resources>
