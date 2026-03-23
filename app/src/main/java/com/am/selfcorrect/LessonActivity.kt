@@ -2,6 +2,7 @@ package com.am.selfcorrect
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -12,6 +13,8 @@ class LessonActivity : AppCompatActivity() {
 
     private lateinit var viewModel: LessonViewModel
     private lateinit var adapter: LessonAdapter
+    private lateinit var backButton: ImageView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +24,12 @@ class LessonActivity : AppCompatActivity() {
         val emptyState = findViewById<View>(R.id.emptyState)
         val tvTotalMistakes = findViewById<TextView>(R.id.tvTotalMistakes)
         val tvLessonsCount = findViewById<TextView>(R.id.tvLessonsCount)
+        backButton = findViewById(R.id.backbtn)
+
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
+
 
         rvLessons.layoutManager = LinearLayoutManager(this)
         adapter = LessonAdapter()
