@@ -27,8 +27,9 @@ class First_screen : AppCompatActivity() {
             startActivity(intent)
         }
         policttext.setOnClickListener {
+            val url = "https://sites.google.com"
             val intent = Intent(Intent.ACTION_VIEW)
-                Uri.parse("https://www.google.com")
+            intent.data = android.net.Uri.parse(url)
             startActivity(intent)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

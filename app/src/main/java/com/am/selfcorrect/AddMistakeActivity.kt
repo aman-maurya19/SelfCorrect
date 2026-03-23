@@ -16,6 +16,9 @@ class AddMistakeActivity : AppCompatActivity() {
     private lateinit var spinner: Spinner
     private lateinit var btnSave: Button
 
+    private lateinit var btnCancel: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_mistake)
@@ -27,6 +30,12 @@ class AddMistakeActivity : AppCompatActivity() {
         etLesson = findViewById(R.id.etLesson)
         spinner = findViewById(R.id.spinner)
         btnSave = findViewById(R.id.btnSave)
+        btnCancel = findViewById(R.id.Cancel)
+
+        btnCancel.setOnClickListener {
+            finish()
+        }
+
 
         // Spinner
         val categories = listOf(

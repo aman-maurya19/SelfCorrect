@@ -126,5 +126,15 @@
             android:textStyle="bold"
             android:elevation="4dp"/>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Cancle"
+            android:textSize="16sp"
+            android:textColor="#E53935"
+            android:textStyle="bold"
+            android:elevation="4dp"/>
+
     </LinearLayout>
 </ScrollView>
