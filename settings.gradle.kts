@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SelfCorrect"
+rootProject.name = "Saroj SelfCorrect"
 include(":app")
  

@@ -1,4 +1,4 @@
-package com.am.selfcorrect
+package com.am.sarojselfcorrect
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

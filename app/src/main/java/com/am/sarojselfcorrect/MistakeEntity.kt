@@ -1,4 +1,4 @@
-package com.am.selfcorrect
+package com.am.sarojselfcorrect
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

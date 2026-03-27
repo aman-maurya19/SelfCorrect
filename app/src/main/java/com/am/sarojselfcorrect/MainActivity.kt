@@ -1,4 +1,4 @@
-package com.am.selfcorrect
+package com.am.sarojselfcorrect
 
 import android.content.Intent
 import android.os.Bundle
