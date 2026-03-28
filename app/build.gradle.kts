@@ -53,7 +53,6 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
 
-    // 🔹 ROOM Database
     implementation("androidx.room:room-runtime:2.7.0-beta01")
     implementation("androidx.room:room-ktx:2.7.0-beta01")
     kapt("androidx.room:room-compiler:2.7.0-beta01")

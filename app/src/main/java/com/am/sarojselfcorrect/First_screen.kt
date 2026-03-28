@@ -26,7 +26,7 @@ class First_screen : AppCompatActivity() {
             startActivity(intent)
         }
         policttext.setOnClickListener {
-            val url = "https://sites.google.com"
+            val url = "https://sites.google.com/view/saroj-selfcorrect/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = android.net.Uri.parse(url)
             startActivity(intent)
