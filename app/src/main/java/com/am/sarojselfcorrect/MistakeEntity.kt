@@ -11,6 +11,5 @@ data class MistakeEntity(
     val description: String,
     val category: String,
     val lesson: String?,
-    val timestamp: Long = System.currentTimeMillis()
+    val date: Long = System.currentTimeMillis()
 )
-

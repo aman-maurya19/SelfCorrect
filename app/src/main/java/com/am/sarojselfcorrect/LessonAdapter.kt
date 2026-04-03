@@ -26,16 +26,22 @@ class LessonAdapter : RecyclerView.Adapter<LessonAdapter.LessonVH>() {
     override fun onBindViewHolder(holder: LessonVH, position: Int) {
         val item = list[position]
 
-        holder.tvLesson.text =
-            item.lesson?.takeIf { it.isNotBlank() } ?: "No lesson added"
+        // ✅ Lesson text safe handling
+        holder.tvLesson.text = if (!item.lesson.isNullOrBlank()) {
+            item.lesson
+        } else {
+            "No lesson added"
+        }
+
+        // ✅ Timestamp safe handling
+        val time = item.date.takeIf { it > 0 } ?: System.currentTimeMillis()
 
         holder.tvDate.text = DateUtils.getRelativeTimeSpanString(
-            if (item.timestamp == 0L) System.currentTimeMillis() else item.timestamp,
+            time,
             System.currentTimeMillis(),
             DateUtils.MINUTE_IN_MILLIS
         )
     }
-
 
     override fun getItemCount() = list.size
 

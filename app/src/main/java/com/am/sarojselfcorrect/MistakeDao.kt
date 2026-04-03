@@ -11,7 +11,7 @@ interface MistakeDao {
     @Insert
     suspend fun insertMistake(mistake: MistakeEntity)
 
-    @Query("SELECT * FROM mistakes ORDER BY timestamp  DESC")
+    @Query("SELECT * FROM mistakes ORDER BY date  DESC")
     fun getAllMistakes(): LiveData<List<MistakeEntity>>
 
     @Query("SELECT * FROM mistakes WHERE lesson IS NOT NULL AND lesson != ''")
